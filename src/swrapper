@@ -1,0 +1,7 @@
+#!/bin/sh
+#
+# Run this server under strace
+# You may use this script (./swrapper) in lieu of ./server
+# with the test driver.  Adjust the -e switch as needed.
+#
+strace -ff -o stracelog -s 1024 -e network,read,write ./server $*

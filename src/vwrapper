@@ -1,0 +1,7 @@
+#!/bin/sh
+#
+# Run this server under valgrind
+# You may use this script (./vwrapper) in lieu of ./server
+# with the test driver
+#
+valgrind --log-file=valgrind.log ./server $*
